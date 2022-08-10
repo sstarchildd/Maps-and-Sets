@@ -1,0 +1,36 @@
+Quick Question #1 <=============================
+
+{1,2,3,4}
+
+Quick Question #2 <==============================
+
+"referee"
+
+Quick Question #3 <==============================
+
+0: {Array(3) => true}
+1: {Array(3) => false}
+
+hasDuplicate <===================================
+
+const hasDuplicate = arr => new Set(arr).size !== arr.length
+
+vowelCount <=====================================
+
+function Vowels(vow){
+  return "aeiou".includes(vow);
+}
+
+function vowelCount(var){
+  const newMap = new Map();
+  for(let v of var){
+    let lowerVar = v.toLowerCase()
+    if(Vowel(lowerVar)){
+      if(newMap.has(lowerVar)){
+        newMap.set(lowerVar, newMap.get(lowerVar) + 1);
+      } else {
+        newMap.set(lowerVar, 1);
+      }
+    }
+  }
+  return newMap;
